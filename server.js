@@ -3,10 +3,6 @@ const cors = require('cors')
 const app = express()
 const PORT = 8000
 
-const elements = {
-    // objects & properties
-}
-
 app.use(cors())
 
 app.get('/', (req, res) => {
