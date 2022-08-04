@@ -14,7 +14,7 @@ function giveEncouragement() {
     "I appreciate you."
 ]
 
-    const max = wordsOfEncouragement.length - 1
+    const max = wordsOfEncouragement.length
     const random = Math.floor(Math.random() * max)
 
     console.log(wordsOfEncouragement[random])
@@ -30,7 +30,7 @@ function giveSelfCareTip() {
     "Take 3 long slow deep breaths & exhale slowly."
 ]
 
-    const max = selfCareTips.length - 1
+    const max = selfCareTips.length
     const random = Math.floor(Math.random() * max)
 
     console.log(selfCareTips[random])
