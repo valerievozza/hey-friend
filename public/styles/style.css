@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  box-shadow: 3px 3px gainsboro;
+  width: 700px;
+  background-color: peachpuff;
+}
+
+.buttons {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 2rem;
+  background-color: paleturquoise;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  box-shadow: 2px 2px gainsboro;
+  padding: 10px;
+}
+
+button:active {
+  background-color: aqua;
+  transform: translate(2px, 2px);
+  font-weight: bold;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+#responseText {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+#responseImage {
+  border-radius: 5px;
+}
+
+#image {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+footer {
+  background-color: black;
+  font-size: 2rem;
+  color: darkgray;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  padding: 10px 10px 100px 10px;
+  bottom: 0;
+}
+
+ul {
+  list-style: none;
+  margin-left: -20px;
+  display: flex;
+  column-gap: 25px;
+  margin-left: -39px;
+}
+
+a {
+  color: darkgray;
+  text-decoration: none;
+  font-weight: bold;
+}
