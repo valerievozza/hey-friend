@@ -6,6 +6,10 @@ html {
   font-size: 62.5%;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   padding: 10px;
   font-size: 1.6rem;
@@ -47,6 +51,11 @@ button:active {
   font-weight: bold;
 }
 
+button:hover {
+  background-color: aqua;
+  transform: translate(2px, 2px);
+}
+
 h1, h2 {
   text-align: center;
 }
@@ -68,6 +77,13 @@ h2 {
 
 #responseImage {
   border-radius: 5px;
+}
+
+#saveItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 #image {
