@@ -6,13 +6,6 @@ encouragement.addEventListener("click", giveEncouragement)
 cat.addEventListener("click", giveCat)
 selfCare.addEventListener("click", giveSelfCareTip)
 
-// Storage.prototype.setObj = function(key,obj) {
-//     return this.setItem(key, JSON.stringify(obj))
-// }
-// Storage.prototype.getObj = function(key) {
-//     return JSON.parse(this.getItem(key))
-// }
-
 function giveEncouragement() {
     const wordsOfEncouragement = [
     "Good job!",
@@ -32,17 +25,18 @@ function giveEncouragement() {
     // document.querySelector('#save').addEventListener('click', saveThisItem)
 
     function saveThisItem() {
-        if (!localStorage.getItem('items')) {
-            localStorage.setItem('items', [])
+        if (localStorage.getItem('items') == null) {
+            localStorage.setItem('items', '[]')
         }
         let existingItems = JSON.parse(localStorage.getItem('items'));
         existingItems.push(wordsOfEncouragement[random])
 
-        localStorage.setItem('items', JSON.stringify(existingItems))
+        console.log(existingItems)
+
+        localStorage.setItem('items', JSON.stringify(existingItems));
     }
     
     saveThisItem()
-    console.log(item)
 
 }
 
@@ -80,15 +74,15 @@ function giveCat() {
 
 //let thisItem = document.getElementById('item').innerHTML
 
-let item = []
+// let item = []
 
-if (!localStorage.getItem('items')) {
-    localStorage.setItem('items', item)
-}
+// if (!localStorage.getItem('items')) {
+//     localStorage.setItem('items', item)
+// }
 
-// document.querySelector('#save').addEventListener('click', saveThisItem)
+// // document.querySelector('#save').addEventListener('click', saveThisItem)
 
-function saveThisItem() {
-    item.push('thisItem')
-    localStorage.setItem('items', item)
-}
+// function saveThisItem() {
+//     item.push('thisItem')
+//     localStorage.setItem('items', item)
+// }
