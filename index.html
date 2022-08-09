@@ -13,27 +13,34 @@
         <h2>What do you need right now?</h2>
     </header>
     <main>
+        <p class="need">I need...</p>
         <div class="buttons">
             <!-- <button id="news">Good news</button> -->
             <button id="encouragement">Words of encouragement</button>
             <button id="cat">A cat picture</button>
             <!-- <button id="validation">Validation</button> -->
             <button id="selfCare">A self-care idea</button>
+            <button id="vent">To vent</button>
             <!-- <button id="innerChild">An activity for my inner child</button> -->
             <!-- <button id="joke">A joke</button> -->
         </div>
-        <div id="responseText">
-        </div>
+        <div id="responseText"></div>
         <div id="image">
-            <img id="responseImage" src="" width="500px">
+            <img id="responseImage" src="">
         </div>
-        <div id="saveItem">
+        <div id="textBox">
+            <form action="/post" method="POST" name="vent" id="ventArea" class="hidden">
+                <textarea name="vent" cols="85" rows="10" placeholder="Type here..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- <div id="saveItem">
             <button id="save" class="hidden">Save</button>
-        </div>
-        <div id="myItems">
+        </div> -->
+        <!-- <div id="myItems">
             <img id="savedImages" src="" width="500px">
             <p id="savedText"></p>
-        </div>
+        </div> -->
     </main>
     <footer>
         <p>Developed by: Valerie Vozza</p>

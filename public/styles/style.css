@@ -10,6 +10,10 @@ html {
   display: none;
 }
 
+.image-container {
+  height: 400px;
+}
+
 body {
   padding: 10px;
   font-size: 1.6rem;
@@ -20,18 +24,23 @@ body {
   align-items: center;
 }
 
+p.need {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  border: 1px solid darkgray;
+  /* border: 1px solid darkgray;
   border-radius: 5px;
-  box-shadow: 3px 3px gainsboro;
+  box-shadow: 3px 3px gainsboro; */
   width: 700px;
-  background-color: peachpuff;
+  background-color: white;
 }
 
 .buttons {
-  padding-top: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -90,6 +99,11 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 30px;
+  margin-top: -50px;
+}
+
+#textBox {
+  margin-top: 0;
 }
 
 footer {
