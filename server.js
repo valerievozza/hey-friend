@@ -31,12 +31,20 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
+// THIS IS NOT UPLOADING TO DB
+// ERROR VALIDATORERROR PATH CONTENT IS REQUIRED
 // Routes
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
     const rant = new Rant ({
         content: req.body.content
     })
-    console.error(rant)
+    try {
+        await rant.save()
+        console.error(rant)
+        res.redirect('/')  
+    } catch (err) {
+        if (err) return res.status(500).send(err)
+    }
 })
 
 app.listen(process.env.PORT || PORT, () => {
