@@ -2,7 +2,6 @@ const encouragement = document.getElementById("encouragement")
 const cat = document.getElementById("cat")
 const selfCare = document.getElementById("selfCare")
 const vent = document.getElementById("vent")
-const postRant = document.getElementById
 
 encouragement.addEventListener("click", giveEncouragement)
 cat.addEventListener("click", giveCat)

@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const PORT = 8080
 const mongoose = require('mongoose')
+const Rant = require('./models/Rant')
 require('dotenv').config()
 const morgan = require('morgan')
 
@@ -10,9 +11,6 @@ const app = express()
 // BODY PARSER
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
-
-// MODELS
-const Rant = require('./models/rant')
 
 app.use(cors())
 
